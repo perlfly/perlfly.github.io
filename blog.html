@@ -1,0 +1,14 @@
+---
+layout: default
+title: Matteo Piombo - Blog
+---
+<center>
+<h2> Blog </h2>
+</center>
+
+{% for post in site.posts %}
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<span>{{ post.date | date: "%d %B %Y" }}</span>
+<div>{{ post.excerpt  }}</div>
+<hr>
+{% endfor %}
