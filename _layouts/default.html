@@ -1,159 +1,51 @@
 <html>
 	<head>
-		<title>Matteo Piombo</title>
+		<title>{{page.title}}</title>
+		<meta name="author" content="Matteo Piombo">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
+		<meta name="description" content="Matteo Piombo's profile site" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="{{ site.url }}/css/base.css" media="screen, projection" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+<div class="container">
+<div id="leftstripe">&nbsp;</div>
+<div id="rightstripe">&nbsp;</div>
 
-				<div class="top">
+<center>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Matteo Piombo</h1>
-							<p>IT Engineer <br> iOS Software Developer</p>
-						</div>
+<div id="main-title">
+<a href="/index.html"> Matteo Piombo </a>
+</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+<hr>
+	<div id="head-bar">
+			<a href="{{ site.url }}/apps/index.html">Apps</a>
+			<span class="head-separator"> : </span> 
+			<a href="{{ site.url }}/about-me.html">About Me</a>
+			<span class="head-separator"> : </span> 
+			<a href="https://twitter.com/perlfly" target="_blank">Twitter</a>
+			<span class="head-separator"> : </span> 
+			<a href="{{ site.url }}/contact-me.html">Contact Me</a>
+	</div>
+<hr>
 
-								2. Standard link (sends the user to another page/site)
+</center>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+{{content}}
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/perlfly" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/perlfly" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:masterscalc@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+<div class="footer">
+<br>
+<hr>
+<br>
+  Copyright © 2014 - 
+  <a rel="author" href="{{site.url}}/about-me.html">Matteo Piombo</a>
+</div>
 
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								{% include intro.html %} 
-							</header>
-
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Here iOS apps on the App Store developed independently by me.</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/the_images/mc3_ITA.png" alt="" /></a>
-										<header>
-											<h3>Master's Calculator <br> F.I.N. Formula <i>(ITA)</i></h3>
-										</header>
-									</article>
-								</div>
-								
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/the_images/mc3_HD_ITA.png" alt="" /></a>
-										<header>
-											<h3>Master's Calculator HD<br> F.I.N. Formula <i>(ITA)</i></h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/the_images/mc3_INT.png" alt="" /></a>
-										<header>
-											<h3>Master's Calculator <br> F.I.N.A. Formula <i>(International)</i></h3>
-										</header>
-									</article>
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/the_images/about.jpg" alt="" /></a>
-							
-							<p>Electronic & Telecommunication Engineer.</p>
-							<p>I developed client server applications using PHP and some Java Frameworks.</p>
-							<p> Since iOS 5.0 I have apps on the Apple Store independently developed by me.</p>
-						</div>
-					</section>
-			
-				
-			
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Matteo Piombo. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				
-			</div>
-
+</div>
 	</body>
 </html>
