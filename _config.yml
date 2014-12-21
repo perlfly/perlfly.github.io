@@ -1,0 +1,12 @@
+# Site settings
+title: Matteo Piombo
+email: no-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Web Site About Me As Developer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://perlfly.github.io" # the base hostname & protocol for your site
+twitter_username: perlfly
+github_username:  perlfly
+
+# Build settings
+markdown: kramdown
