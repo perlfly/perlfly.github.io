@@ -95,6 +95,11 @@ hr {
   vertical-align: middle; }
   .icon > svg path {
     fill: #828282; }
+
+img.appicon {
+	border-radius: 1em;
+	vertical-align: middle;
+}
     
 @media only screen and (max-width: 800px){
 .container{width:700px}
@@ -115,6 +120,12 @@ hr {
 @media only screen and (max-width: 400px){
 .container{width:290px}
 img{max-width:285px}
+
+img.appicon {
+	max-width:66px;
+	border-radius: 0.8em;
+	vertical-align: bottom;
+}
 
 body {font-size:18px;padding-left:10px;padding-right:10px;}
 #head-bar {
